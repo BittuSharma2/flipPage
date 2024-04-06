@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* border: 1px solid brown; */
+    height: 500px;
+    width: 500px;
+    
+    border-radius: 30px;
+}
+.card-inner{
+    
+    height: 500px;
+    width: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.9999s;
+
+    border-radius: 30px;
+    background-color:rgb(96, 93, 93);
+
+    
+}
+
+.card-front,.card-back{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* .card-inner:hover{
+    transform: rotateY(180deg);
+} */
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+table{
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    color: black;
+    font-size: 30px;
+}
+input{
+    /* border: none; */
+    font-size: 25px;
+    height: 45px;
+    width: 370px;
+    background-color: rgb(96, 93, 93);
+    outline: none;
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+button{
+    
+    background-color: rgb(96, 93, 93) ;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+td{
+    padding: 5px;
+}
+h3{
+    cursor:default;
+}
+p{
+    padding: 5px;
+    color:blue;
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+}
+p:hover{
+    color: rgb(1, 1, 95);
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+
